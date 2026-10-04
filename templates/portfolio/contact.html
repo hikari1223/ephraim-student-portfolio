@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact | Ephraim B. Balbalec Jr.{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">CONTACT</p>
+        <h1>Let's Connect</h1>
+        <p>
+            Interested in my projects or want to get in touch?
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container contact-grid">
+
+        <div>
+            <h2>Get in Touch</h2>
+
+            <p>
+                I'm always interested in learning, working on projects,
+                and discussing technology.
+            </p>
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <span>ephraimbalbalecjr@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>School</strong>
+                <span>DMMMSU-NLUC</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Program</strong>
+                <span>Bachelor of Science in Information Systems</span>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h3>Portfolio Message</h3>
+
+            <p>
+                This page is currently a portfolio contact section.
+                A database-powered contact form can be added as a
+                future improvement.
+            </p>
+
+            <a href="{% url 'home' %}" class="btn">
+                Back to Home
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery | Ephraim B. Balbalec Jr.{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">GALLERY</p>
+        <h1>My Gallery</h1>
+        <p>Some of my interests captured in images.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{% static 'images/anime.jpg' %}" alt="Anime">
+                <div class="gallery-overlay">
+                    <h3>Anime</h3>
+                    <p>Favorite anime series</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/pc.jpg' %}" alt="PC Hardware">
+                <div class="gallery-overlay">
+                    <h3>PC Hardware</h3>
+                    <p>Computer builds and components</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/technology.jpg' %}" alt="Technology">
+                <div class="gallery-overlay">
+                    <h3>Technology</h3>
+                    <p>Tech interests</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/gaming.jpg' %}" alt="Gaming">
+                <div class="gallery-overlay">
+                    <h3>Gaming</h3>
+                    <p>RPG and anime games</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/japan.jpg' %}" alt="Japan">
+                <div class="gallery-overlay">
+                    <h3>Japan</h3>
+                    <p>Places I want to visit</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/europe.jpg' %}" alt="Europe">
+                <div class="gallery-overlay">
+                    <h3>Europe</h3>
+                    <p>Travel dreams</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

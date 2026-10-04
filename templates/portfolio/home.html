@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Ephraim B. Balbalec Jr.{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <p class="eyebrow">STUDENT PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Ephraim B. Balbalec Jr.</span>
+            </h1>
+
+            <h2>Bachelor of Science in Information Systems Student</h2>
+
+            <p>
+                I'm a second-year college student at DMMMSU-NLUC
+                interested in technology, computers, anime, games,
+                and learning new things in IT.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="{% url 'about' %}" class="btn">About Me</a>
+                <a href="{% url 'projects' %}" class="btn btn-outline">
+                    View Projects
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="{% static 'images/profile.jpg' %}"
+                 alt="Ephraim B. Balbalec Jr.">
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">WELCOME</p>
+            <h2>My Student Portfolio</h2>
+        </div>
+
+        <div class="cards three-columns">
+
+            <div class="card">
+                <h3>IT Student</h3>
+                <p>
+                    Currently studying Bachelor of Science in
+                    Information Systems at DMMMSU-NLUC.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Technology</h3>
+                <p>
+                    Interested in computer hardware, PC parts,
+                    software, and new technology updates.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Interests</h3>
+                <p>
+                    I enjoy anime, manga, manhwa, RPG anime games,
+                    and learning about Japan and Europe.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
